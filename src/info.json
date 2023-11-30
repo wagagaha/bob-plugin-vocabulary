@@ -1,0 +1,49 @@
+{
+  "identifier": "com.wagagaha.bob.vocabulary",
+  "version": "1.0",
+  "category": "translate",
+  "name": "Bob's Vocabulary",
+  "summary": "Bob's Vocabulary",
+  "author": "wagagaha",
+  "homepage": "https://github.com/wagagaha/bob-plugin-vocabulary",
+  "appcast": "https://raw.githubusercontent.com/wagagaha/bob-plugin-vocabulary/main/appcast.json",
+  "minBobVersion": "1.8.0",
+  "options": [
+    {
+      "identifier": "googleApiKey",
+      "type": "text",
+      "title": "Google API Key",
+      "desc": "Required to use Google Translate API.",
+      "isKeyOption": true,
+      "textConfig": {
+        "type": "secure"
+      }
+    },
+    {
+      "identifier": "vocabulary",
+      "type": "menu",
+      "title": "Vocabulary",
+      "defaultValue": "0",
+      "menuValues": [
+        {
+          "value": "0",
+          "title": "Google Sheet"
+        },
+        {
+          "value": "1",
+          "title": "不背单词"
+        }
+      ]
+    },
+    {
+      "identifier": "cookie",
+      "type": "text",
+      "title": "Cookie",
+      "desc": "Required to import.",
+      "isKeyOption": true,
+      "textConfig": {
+        "type": "secure"
+      }
+    }
+  ]
+}
