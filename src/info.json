@@ -1,6 +1,6 @@
 {
   "identifier": "com.wagagaha.bob.vocabulary",
-  "version": "1.0",
+  "version": "0.1.0",
   "category": "translate",
   "name": "Bob's Vocabulary",
   "summary": "Bob's Vocabulary",
@@ -9,16 +9,6 @@
   "appcast": "https://raw.githubusercontent.com/wagagaha/bob-plugin-vocabulary/main/appcast.json",
   "minBobVersion": "1.8.0",
   "options": [
-    {
-      "identifier": "googleApiKey",
-      "type": "text",
-      "title": "Google API Key",
-      "desc": "Required to use Google Translate API.",
-      "isKeyOption": true,
-      "textConfig": {
-        "type": "secure"
-      }
-    },
     {
       "identifier": "vocabulary",
       "type": "menu",
@@ -36,10 +26,20 @@
       ]
     },
     {
-      "identifier": "cookie",
+      "identifier": "googleApiKey",
+      "type": "text",
+      "title": "Google API Key",
+      "desc": "Required to use Google Translate API.",
+      "isKeyOption": true,
+      "textConfig": {
+        "type": "secure"
+      }
+    },
+    {
+      "identifier": "Cookie",
       "type": "text",
       "title": "Cookie",
-      "desc": "Required to import.",
+      "desc": "不背单词 Cookie，仅支持英文单词",
       "isKeyOption": true,
       "textConfig": {
         "type": "secure"
