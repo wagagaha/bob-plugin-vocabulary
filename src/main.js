@@ -22,10 +22,11 @@ function cacheToFile(word, filepath) {
 }
 
 /**
+ *@param {string} filepath
  * @returns {bool} true: clear cache success, false: clear cache failed
  */
-function clearCache() {
-  return true;
+function clearCache(filepath) {
+  return $file.delete(filepath);
 }
 
 /**
